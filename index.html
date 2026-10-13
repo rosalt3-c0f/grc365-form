@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>forms</title>
+<style>
+	@font-face {
+		font-family: Candara;
+		src: url(Candara.ttf);
+	} h1 {
+		text-align: center;
+		font-weight: bold;
+	} form {
+		width: 600px;
+		min-height: 600px;
+		padding: 24px;
+		background: lightblue;
+		margin: 36px auto;
+		border: 1px solid darkblue;
+		box-shadow: 2px 3px 6px darkblue;
+		border-radius: 18px;
+		font: 14pt/1.2em Candara;
+	} fieldset {
+		margin-top: 18px;
+	} #personal input, #submit {
+		width: 100%;
+		height: 24px;
+		margin-bottom: 12px;
+	} input[type="text"] {
+		width: 98%;
+		font: 12pt/1.4em Roboto;
+	} select {
+		width: 50%;
+		font: 12pt/1.4em Roboto;
+		padding: 2px 4px;
+	} textarea {
+		width: 98%;
+	} input[type="submit"] {
+		width: 100px;
+		height: 40px;
+		background: lightgreen;
+		display: block;
+		margin: 0 auto;
+	}
+</style>
+</head>
+
+<body>
+	<form action="https://formsubmit.co/a409041d26b951312c89de97b49b6774" method="post">
+	<h1>Contact Us</h1>
+	<label> First Name </label><br/>
+	<input type="text" name="first-name" /><br/>
+	<label> Last Name </label><br/>
+	<input type="text" name="last-name" /><br/>
+	<label> Email </label><br/>
+	<input type="text" name="email" /><br/><br/>
+
+	<fieldset>
+	<legend>Operating system</legend>
+	<input type="radio" name="os" /><label>Mac OS</label><br/>
+	<input type="radio" name="os" /><label>Windows</label><br/>
+	<input type="radio" name="os" /><label>UNIX</label><br/>
+	</fieldset>
+		
+	<fieldset>
+	<legend>Services</legend>
+	<input type="checkbox" name="service"><label>Design</label><br/>
+	<input type="checkbox" name="service"><label>UI/UX</label><br/>
+	<input type="checkbox" name="service"><label>Consulting</label><br/>
+	</fieldset><br/>
+	
+	<label>What is your timeframe?</label><br/>
+	<select>
+		<option>ASAP </option>
+		<option>This week</option>
+		<option>This month</option>
+		<option>This year</option>
+		<option>Not sure</option>
+	</select>
+	<br/><br/>
+		
+	<label>Comments</label><br/>
+	<textarea>	
+	</textarea><br/><br/>
+	
+	<input type="submit" value="Submit" />
+	</form>
+</body>
+</html>
